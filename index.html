@@ -350,7 +350,7 @@
 
               {!loading && cases.length > 0 && (
                 <div style={{ display: "flex", gap: 8, flexWrap: "wrap", alignItems: "center" }}>
-                  <input placeholder="Search cases, judges, courts\u2026" value={search} onChange={e => setSearch(e.target.value)} style={{ ...inp, width: 240 }} />
+                  <input placeholder="Search cases, judges, courts&#8230;" value={search} onChange={e => setSearch(e.target.value)} style={{ ...inp, width: 240 }} />
                   <select value={filterGroup} onChange={e => setFilterGroup(e.target.value)} style={{ ...inp, fontSize: 11 }}>
                     <option value="all">All Jurisdictions</option>
                     {sortedGroupNames.map(g => <option key={g} value={g}>{g} ({groups[g]||0})</option>)}
